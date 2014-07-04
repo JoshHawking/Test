@@ -19,12 +19,12 @@ public class Core
     this.config = getConfig();
     if (!this.config.contains("message"))
     {
-      this.config.set("message", "§9Stacker> §7You where stacked by §e<player>.");
+      this.config.set("message", "Stacker> You where stacked by <player>.");
       saveConfig();
     }
     if (!this.config.contains("ejectmessage"))
     {
-      this.config.set("ejectmessage", "§9Stacker> §7You where ejected by §e<player>.");
+      this.config.set("ejectmessage", "Stacker> You where ejected by <player>.");
       saveConfig();
     }
     getServer().getPluginManager().registerEvents(this, this);
